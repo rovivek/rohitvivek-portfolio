@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Vivek - Creator, Learner, Thinker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Creator, Learner, Thinker</p>
+            <h1>Hi, I'm <span>Rohit</span><br>Vivek from Atlanta</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="spaced-about">Aspiring innovator and tech enthusiast with a passion for Computer Science and problem-solving. Currently pursuing my degree in Computer Science with specializations in Intelligence and Information Internetworks at Georgia Institute of Technology. A consistent performer with a 4.0 GPA and recognition on the Faculty Honors List.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Java, JavaScript/TypeScript, C, Python, HTML, CSS, Axon</li>
+                        <li><span>Microsoft Office Suite</span><br>Microsoft Word/Excel/PowerPoint</li>
+                        <li><span>Extracurricular Interests</span><br>Robotics, Debating/Communication (I have given a TEDx Speech), Tennis, Guitar, Trekking</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Georgia Tech Facilities and Energy Department Fault Detection Diagnostics - 2023</span><br>● Implemented SkySpark to analyze operational errors in campus buildings — estimated 5%-30% energy wastage <br>
+                            ● Mastered Axon to script algorithms into SkySpark that outline relations between components of building sensors</li>
+                        <li><span>Zoftware Software Engineering and Artificial Intelligence Internship - 2023</span><br>● Collaborated with CTO to create AI-driven chatbot to advise millions of clients on how to catalyze digital transformation <br>
+                            ● Improved upon existing chatbot software using Python — modified master code to utilize MongoDB-hosted collection and to store chat history for improved context persistence; augmented performance by 80% (based on bandwidth usage)</li>
+                        <li><span>JPMorgan Chase Virtual Software Engineering - 2021</span><br>● Implemented JPMorgan Perspective code to help traders visualize stock prices—explored Git, financial analysis, Python <br>
+                            ● Reported 94% customer satisfaction and 88% accuracy in price prediction within a 1 month period</li>
+                        <li><span>Siemens Virtual Work Engineering and Commercial Management - 2021</span><br>● Experienced the engineering process at Siemens — designed prospective appliances <br>
+                            ● Assessed the risk and profitability behind future models of appliances; simulated a 12% reduction in sunk costs</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Georgia Institute of Technology, Atlanta || Expected Graduation: 2025</span><br>● Computer Science Major; Threads: Intelligence and Info Internetworks. Overall GPA: 4.0. Made Faculty Honors List <br>
+                            ● Relevant Courses: Intro to Object Oriented Programming, Discrete Math, Data Structures and Algorithms, Linear
+                            Algebra</li>
+                        <li><span>GEMS Modern Academy, Dubai (Indian CISCE Curriculum) || Graduation: 2022</span><br>● ICSE 10th Grade Board Exam – 98% Overall (100% in Computer Science, Chemistry, Biology, History, and Geography) <br>
+                            ● ISC 12th Grade Board Exam – 96.25% Overall (99% in Mathematics and English)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work - Hover Over Each Photo</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Zoftware Software Engineering and Artificial Intelligence Internship</h3>
+                    <p>● Collaborated with CTO to create AI-driven chatbot to advise millions of clients on how to catalyze digital transformation <br>
+                        ● Improved upon existing chatbot software using Python — modified master code to utilize MongoDB-hosted collection and to store chat history for improved context persistence; augmented performance by 80% (based on bandwidth usage)</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Weather App with Real-Time Data Integration</h3>
+                    <p>● Built a weather app from scratch in React Native framework primarily with JavaScript/TypeScript <br>
+                        ● Designed stylish user interface and fetched API data for real-time weather display; explored state management and
+                        hooks</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>● Built a stylized website optimized for all screen sizes using HTML, CSS, and JavaScript <br>
+                        ● In other words, I built this website right here!</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>rvivek7@gatech.edu</p>
+                <p><i class="fas fa-phone-square-alt"></i>+1-470-883-2697</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/rohit_viv/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rohit-vivek-a03b17226/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="E-mail" placeholder="someone@example.com" required>
+                    <textarea name="Message" rows="6" placeholder="Let's connect...."></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright © Rohit Vivek. Gratitude to GreatStack.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function openmenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGOFemBrLVkPGGyBq1icTCpD2dP4scqk52nUQNo-EKXtlaLadA7eVIRZVqw13uJO6Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you for reaching out! Your message has been received."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
