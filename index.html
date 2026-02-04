@@ -3,178 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Vivek | Software Engineer & Innovator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Rohit Vivek | Software Engineer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <nav id="navbar">
-        <div class="container nav-content">
-            <div class="logo">ROHIT<span>.</span></div>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </div>
-    </nav>
+<nav class="navbar">
+    <div class="container">
+        <a href="#" class="logo">ROHIT<span>.V</span></a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
 
-    <header id="header">
-        <div class="container hero-text">
-            <p class="hero-label">Software Engineering Intern @ Meta</p>
-            <h1>Building <span>Scalable</span> AI<br>& Intelligent Systems.</h1>
-            <p class="hero-sub">Georgia Tech Computer Science | AI & People Concentration</p>
-            <div class="hero-btns">
-                <a href="#portfolio" class="btn primary">View My Work</a>
-                <a href="#contact" class="btn secondary">Get In Touch</a>
+<header class="hero">
+    <div class="container">
+        <p class="mono-label">Meta SWE Intern // Georgia Tech '26</p>
+        <h1>Building the future of <span>AI & Scalable Systems.</span></h1>
+        <p class="hero-desc">CS Student specializing in Intelligence and Information Internetworks. </p>
+        <div class="cta-group">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="mailto:rvivek7@gatech.edu" class="btn secondary">Get In Touch</a>
+        </div>
+    </div>
+</header>
+
+<section id="experience" class="section">
+    <div class="container">
+        <h2 class="title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="time-header">
+                    <h3>Meta Platforms, Inc.</h3>
+                    <span>May 2025 – Aug 2025</span>
+                </div>
+                <p class="role">Software Engineering Intern </p>
+                <ul>
+                    <li>Built post-ad creation upsells for Click-to-WhatsApp and Messenger across Meta mobile interfaces. </li>
+                    <li>Achieved 50,000+ impressions and a 12% CTR—2x higher than existing benchmarks. </li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="time-header">
+                    <h3>Kahua, Inc.</h3>
+                    <span>May 2024 – Aug 2024</span>
+                </div>
+                <p class="role">AI/ML Engineering Intern </p>
+                <ul>
+                    <li>Developed data-secure RAG models using Hierarchical Parsing and LLaVA. </li>
+                    <li>Reduced information retrieval times by 40% with 96% accuracy. </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </div>
+</section>
 
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <div class="img-wrapper">
-                        <img src="images/user.png" alt="Rohit Vivek">
-                    </div>
-                </div>
-                <div class="about-col-2">
-                    <h2 class="sub-title">The Mission</h2>
-                    <p class="description">
-                        I am a Computer Science student at <strong>Georgia Institute of Technology</strong> specializing in 
-                        Artificial Intelligence and People. I focus on the intersection of high-performance mobile systems 
-                        and multimodal AI cognition. 
-                    </p>
-                    
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Toolkit</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>Python, Java, C, SQL, JavaScript/TypeScript, PHP </li>
-                            <li><span>AI/ML</span><br>PyTorch, LangChain, LlamaIndex, LLaVA, Pandas </li>
-                            <li><span>Infrastructure</span><br>React Native, Git, Meta Business Suite, Power BI </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Georgia Institute of Technology</span><br>B.S. in Computer Science | Minor in Economics </li>
-                            <li><span>Academic Standing</span><br>GPA: 3.86 | Faculty Honors | Expected May 2026 </li>
-                        </ul>
-                    </div>
+<section id="projects" class="section alt-bg">
+    <div class="container">
+        <h2 class="title">Featured Ventures</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Scalable Solutions</h3>
+                <p>Co-Founder & Software Lead. Building patient weighing systems and medical dose calculators for emergency response.</p>
+                <div class="project-footer">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> Website</a>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="experience">
-        <div class="container">
-            <h2 class="sub-title">Professional Impact</h2>
-            <div class="exp-grid">
-                <div class="exp-card highlight">
-                    <div class="card-meta">
-                        <h3>Meta Platforms, Inc.</h3>
-                        <span class="date">Summer 2025</span>
-                    </div>
-                    <p class="role">Software Engineering Intern (Ads Team) </p>
-                    <ul>
-                        <li>Built post-ad creation upsells for WhatsApp & Messenger across Meta mobile interfaces.</li>
-                        <li>Achieved 50,000+ impressions and 12% CTR in initial A/B testing.</li>
-                        <li>Deployed performance dashboards for real-time monitoring of engagement metrics.</li>
-                    </ul>
+            <div class="project-card">
+                <h3>OutPost</h3>
+                <p>Team project developing a camera-enabled local LLM virtual assistant for outdoor exploration. Tasked with object detection. </p>
+                <div class="project-footer">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
                 </div>
+            </div>
 
-                <div class="exp-card">
-                    <div class="card-meta">
-                        <h3>Kahua, Inc.</h3>
-                        <span class="date">Summer 2024</span>
-                    </div>
-                    <p class="role">AI/ML Engineering Intern </p>
-                    <ul>
-                        <li>Developed data-secure RAG models using Hierarchical Parsing and superior embedding.</li>
-                        <li>Engineered a logic-backed multimodal model with LLaVA to mitigate $500k in annual damage costs.</li>
-                        <li>Reduced information retrieval times by 40% with 96% response accuracy.</li>
-                    </ul>
+            <div class="project-card">
+                <h3>SMS Spam Classifier</h3>
+                <p>Binary classification pipeline using TF-IDF and Naive Bayes targeting 97% precision. </p>
+                <div class="project-footer">
+                    <a href="#"><i class="fab fa-github"></i> Repository</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="sub-title">Featured Ventures</h2>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/scalable.png" alt="Scalable Solutions">
-                    <div class="layer">
-                        <h3>Scalable Solutions</h3>
-                        <p>Co-Founder & Software Lead. Developing medical dosage calculators and patient weighing systems for emergency response.</p>
-                        <a href="https://scalablesolutions.website" target="_blank"><i class="fa-solid fa-link"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/outpost.png" alt="OutPost Project">
-                    <div class="layer">
-                        <h3>OutPost Assistant</h3>
-                        <p>Camera-enabled local LLM assistant for outdoor exploration. Lead developer for object detection and camera operations.</p>
-                        <a href="https://github.com/rohitvivek/outpost" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/spam.png" alt="SMS Spam Detection">
-                    <div class="layer">
-                        <h3>SMS Spam Classifier</h3>
-                        <p>ML pipeline (TF-IDF + Naive Bayes) targeting 97% precision for binary spam classification.</p>
-                        <div class="work-links">
-                            <a href="#" target="_blank"><i class="fa-solid fa-globe"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<footer id="contact" class="footer">
+    <div class="container">
+        <h2>Let's Connect</h2>
+        <div class="footer-links">
+            <a href="mailto:rvivek7@gatech.edu"><i class="fas fa-envelope"></i> rvivek7@gatech.edu [cite: 2]</a>
+            <a href="tel:4708832697"><i class="fas fa-phone"></i> (470)-883-2697 [cite: 2]</a>
+            <a href="https://www.linkedin.com/in/rohitvivek/"><i class="fab fa-linkedin"></i> LinkedIn [cite: 2]</a>
         </div>
-    </section>
+        <p class="copyright">© 2026 Rohit Vivek. All Rights Reserved.</p>
+    </div>
+</footer>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h2 class="sub-title">Connect</h2>
-                    <p><i class="fa-solid fa-paper-plane"></i> rvivek7@gatech.edu [cite: 2]</p>
-                    <p><i class="fa-solid fa-phone"></i> (470)-883-2697 [cite: 2]</p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/rohitvivek/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://rohitvivek.info/" target="_blank"><i class="fa-solid fa-globe"></i></a>
-                    </div>
-                </div>
-                <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Email Address" required>
-                        <textarea name="Message" rows="5" placeholder="Let's build something..."></textarea>
-                        <button type="submit" class="btn primary">Send Message</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="copyright">
-        <p>© 2026 Rohit Vivek. Built in Atlanta, GA.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
