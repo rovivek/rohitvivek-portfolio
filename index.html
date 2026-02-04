@@ -2,189 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Vivek - Creator, Learner, Thinker</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Rohit Vivek | Software Engineer & Innovator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
+
+    <nav id="navbar">
+        <div class="container nav-content">
+            <div class="logo">ROHIT<span>.</span></div>
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-            <p>Creator, Learner, Thinker</p>
-            <h1>Hi, I'm <span>Rohit</span><br>Vivek from Atlanta</h1>
         </div>
-    </div>
-</div>
+    </nav>
 
-<div id="about">
-    <div class="container">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
+    <header id="header">
+        <div class="container hero-text">
+            <p class="hero-label">Software Engineering Intern @ Meta</p>
+            <h1>Building <span>Scalable</span> AI<br>& Intelligent Systems.</h1>
+            <p class="hero-sub">Georgia Tech Computer Science | AI & People Concentration</p>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Get In Touch</a>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p class="spaced-about">Aspiring innovator and tech enthusiast with a passion for Computer Science and problem-solving. Currently pursuing my degree in Computer Science with specializations in Intelligence and Information Internetworks at Georgia Institute of Technology. A consistent performer with a 4.0 GPA and recognition on the Faculty Honors List.
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="img-wrapper">
+                        <img src="images/user.png" alt="Rohit Vivek">
+                    </div>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="about-col-2">
+                    <h2 class="sub-title">The Mission</h2>
+                    <p class="description">
+                        I am a Computer Science student at <strong>Georgia Institute of Technology</strong> specializing in 
+                        Artificial Intelligence and People. I focus on the intersection of high-performance mobile systems 
+                        and multimodal AI cognition. 
+                    </p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Toolkit</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>Python, Java, C, SQL, JavaScript/TypeScript, PHP </li>
+                            <li><span>AI/ML</span><br>PyTorch, LangChain, LlamaIndex, LLaVA, Pandas </li>
+                            <li><span>Infrastructure</span><br>React Native, Git, Meta Business Suite, Power BI </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Georgia Institute of Technology</span><br>B.S. in Computer Science | Minor in Economics </li>
+                            <li><span>Academic Standing</span><br>GPA: 3.86 | Faculty Honors | Expected May 2026 </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="sub-title">Professional Impact</h2>
+            <div class="exp-grid">
+                <div class="exp-card highlight">
+                    <div class="card-meta">
+                        <h3>Meta Platforms, Inc.</h3>
+                        <span class="date">Summer 2025</span>
+                    </div>
+                    <p class="role">Software Engineering Intern (Ads Team) </p>
                     <ul>
-                        <li><span>Programming</span><br>Java, JavaScript/TypeScript, C, Python, HTML, CSS, Axon</li>
-                        <li><span>Microsoft Office Suite</span><br>Microsoft Word/Excel/PowerPoint</li>
-                        <li><span>Extracurricular Interests</span><br>Robotics, Debating/Communication (I have given a TEDx Speech), Tennis, Guitar, Trekking</li>
+                        <li>Built post-ad creation upsells for WhatsApp & Messenger across Meta mobile interfaces.</li>
+                        <li>Achieved 50,000+ impressions and 12% CTR in initial A/B testing.</li>
+                        <li>Deployed performance dashboards for real-time monitoring of engagement metrics.</li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="experience">
+
+                <div class="exp-card">
+                    <div class="card-meta">
+                        <h3>Kahua, Inc.</h3>
+                        <span class="date">Summer 2024</span>
+                    </div>
+                    <p class="role">AI/ML Engineering Intern </p>
                     <ul>
-                        <li><span>Georgia Tech Facilities and Energy Department Fault Detection Diagnostics - 2023</span><br>● Implemented SkySpark to analyze operational errors in campus buildings — estimated 5%-30% energy wastage <br>
-                            ● Mastered Axon to script algorithms into SkySpark that outline relations between components of building sensors</li>
-                        <li><span>Zoftware Software Engineering and Artificial Intelligence Internship - 2023</span><br>● Collaborated with CTO to create AI-driven chatbot to advise millions of clients on how to catalyze digital transformation <br>
-                            ● Improved upon existing chatbot software using Python — modified master code to utilize MongoDB-hosted collection and to store chat history for improved context persistence; augmented performance by 80% (based on bandwidth usage)</li>
-                        <li><span>JPMorgan Chase Virtual Software Engineering - 2021</span><br>● Implemented JPMorgan Perspective code to help traders visualize stock prices—explored Git, financial analysis, Python <br>
-                            ● Reported 94% customer satisfaction and 88% accuracy in price prediction within a 1 month period</li>
-                        <li><span>Siemens Virtual Work Engineering and Commercial Management - 2021</span><br>● Experienced the engineering process at Siemens — designed prospective appliances <br>
-                            ● Assessed the risk and profitability behind future models of appliances; simulated a 12% reduction in sunk costs</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>Georgia Institute of Technology, Atlanta || Expected Graduation: 2025</span><br>● Computer Science Major; Threads: Intelligence and Info Internetworks. Overall GPA: 4.0. Made Faculty Honors List <br>
-                            ● Relevant Courses: Intro to Object Oriented Programming, Discrete Math, Data Structures and Algorithms, Linear
-                            Algebra</li>
-                        <li><span>GEMS Modern Academy, Dubai (Indian CISCE Curriculum) || Graduation: 2022</span><br>● ICSE 10th Grade Board Exam – 98% Overall (100% in Computer Science, Chemistry, Biology, History, and Geography) <br>
-                            ● ISC 12th Grade Board Exam – 96.25% Overall (99% in Mathematics and English)</li>
+                        <li>Developed data-secure RAG models using Hierarchical Parsing and superior embedding.</li>
+                        <li>Engineered a logic-backed multimodal model with LLaVA to mitigate $500k in annual damage costs.</li>
+                        <li>Reduced information retrieval times by 40% with 96% response accuracy.</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work - Hover Over Each Photo</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work-1.png">
-                <div class="layer">
-                    <h3>Zoftware Software Engineering and Artificial Intelligence Internship</h3>
-                    <p>● Collaborated with CTO to create AI-driven chatbot to advise millions of clients on how to catalyze digital transformation <br>
-                        ● Improved upon existing chatbot software using Python — modified master code to utilize MongoDB-hosted collection and to store chat history for improved context persistence; augmented performance by 80% (based on bandwidth usage)</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">Featured Ventures</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/scalable.png" alt="Scalable Solutions">
+                    <div class="layer">
+                        <h3>Scalable Solutions</h3>
+                        <p>Co-Founder & Software Lead. Developing medical dosage calculators and patient weighing systems for emergency response.</p>
+                        <a href="https://scalablesolutions.website" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-2.png">
-                <div class="layer">
-                    <h3>Weather App with Real-Time Data Integration</h3>
-                    <p>● Built a weather app from scratch in React Native framework primarily with JavaScript/TypeScript <br>
-                        ● Designed stylish user interface and fetched API data for real-time weather display; explored state management and
-                        hooks</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="work">
+                    <img src="images/outpost.png" alt="OutPost Project">
+                    <div class="layer">
+                        <h3>OutPost Assistant</h3>
+                        <p>Camera-enabled local LLM assistant for outdoor exploration. Lead developer for object detection and camera operations.</p>
+                        <a href="https://github.com/rohitvivek/outpost" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div class="work">
-                <img src="images/work-3.png">
-                <div class="layer">
-                    <h3>Personal Portfolio Website</h3>
-                    <p>● Built a stylized website optimized for all screen sizes using HTML, CSS, and JavaScript <br>
-                        ● In other words, I built this website right here!</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+
+                <div class="work">
+                    <img src="images/spam.png" alt="SMS Spam Detection">
+                    <div class="layer">
+                        <h3>SMS Spam Classifier</h3>
+                        <p>ML pipeline (TF-IDF + Naive Bayes) targeting 97% precision for binary spam classification.</p>
+                        <div class="work-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
-    </div>
-</div>
+    </section>
 
-<div id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>rvivek7@gatech.edu</p>
-                <p><i class="fas fa-phone-square-alt"></i>+1-470-883-2697</p>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/rohit_viv/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/rohit-vivek-a03b17226/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Connect</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i> rvivek7@gatech.edu [cite: 2]</p>
+                    <p><i class="fa-solid fa-phone"></i> (470)-883-2697 [cite: 2]</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/rohitvivek/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://rohitvivek.info/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Email Address" required>
+                        <textarea name="Message" rows="5" placeholder="Let's build something..."></textarea>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
                 </div>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="text" name="E-mail" placeholder="someone@example.com" required>
-                    <textarea name="Message" rows="6" placeholder="Let's connect...."></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
-            </div>
         </div>
-    </div>
-    <div class="copyright">
-        <p> Copyright © Rohit Vivek. Gratitude to GreatStack.</p>
-    </div>
-</div>
+    </section>
 
+    <footer class="copyright">
+        <p>© 2026 Rohit Vivek. Built in Atlanta, GA.</p>
+    </footer>
 
-
-<script>
-    var tablinks = document.getElementsByClassName("tab-links")
-    var tabcontents = document.getElementsByClassName("tab-contents")
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link")
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link")
-        document.getElementById(tabname).classList.add("active-tab")
-    }
-</script>
-
-<script>
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function openmenu(){
-        sidemeu.style.right = "-200px";
-    }
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGOFemBrLVkPGGyBq1icTCpD2dP4scqk52nUQNo-EKXtlaLadA7eVIRZVqw13uJO6Q/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Thank you for reaching out! Your message has been received."
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
