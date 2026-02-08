@@ -1,118 +1,494 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Vivek | Software Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Rohit Vivek — Software Engineer & Builder</title>
+  <meta name="description" content="Rohit Vivek — Software engineer. Interned at Meta. Built AI/ML systems, RAG pipelines, and real-world products." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rohit Vivek — Software Engineer & Builder" />
+  <meta property="og:description" content="Projects in AI/ML, product engineering, and real-world systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rohitvivek.info/" />
+  <meta property="og:image" content="assets/og.png" />
+
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" referrerpolicy="no-referrer" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Rohit Vivek",
+    "url":"https://rohitvivek.info/",
+    "email":"mailto:rvivek7@gatech.edu",
+    "sameAs":[
+      "https://www.linkedin.com/in/rohitvivek/"
+    ],
+    "jobTitle":"Software Engineer"
+  }
+  </script>
 </head>
+
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<nav class="navbar">
-    <div class="container">
-        <div class="logo">ROHIT VIVEK</div>
-        <ul class="nav-links">
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Top glow / background -->
+  <div class="bg">
+    <div class="bg__grid"></div>
+    <div class="bg__orb bg__orb--1"></div>
+    <div class="bg__orb bg__orb--2"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Rohit Vivek</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav id="site-nav" class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Highlights</a>
+        <a href="#contact" class="nav__cta">Contact</a>
+      </nav>
     </div>
-</nav>
+  </header>
 
-<header class="hero">
-    <div class="container">
-        <p class="tagline">META SWE INTERN // GEORGIA TECH '26</p>
-        <h1>Building <span>Scalable AI</span> & Intelligent Systems.</h1>
-        <p class="bio">Computer Science @ Georgia Tech. Specializing in Artificial Intelligence and Information Internetworks.</p>
-        <div class="hero-actions">
-            <a href="#projects" class="btn-main">View Projects</a>
-            <a href="#contact" class="btn-sub">Get In Touch</a>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="pill">
+            <i class="fa-solid fa-sparkles"></i>
+            <span>Software Engineer • AI/ML • Product</span>
+          </div>
+
+          <h1>
+            I build <span class="accent">beautiful products</span> and
+            <span class="accent">practical AI</span> that ship.
+          </h1>
+
+          <p class="lead">
+            CS @ Georgia Tech (AI + People concentrations). I’ve built mobile growth features at Meta,
+            AI/ML R&D systems (RAG + multimodal) in industry, and I’m currently building real-world healthcare tech.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">
+              View Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-ghost" href="assets/Rohit_Vivek_Resume.pdf" target="_blank" rel="noreferrer">
+              Resume <i class="fa-regular fa-file-lines"></i>
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <a class="meta-link" href="mailto:rvivek7@gatech.edu">
+              <i class="fa-solid fa-envelope"></i> rvivek7@gatech.edu
+            </a>
+            <span class="meta-dot">•</span>
+            <a class="meta-link" href="https://www.linkedin.com/in/rohitvivek/" target="_blank" rel="noreferrer">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
         </div>
-    </div>
-</header>
 
-<section id="experience" class="section">
-    <div class="container">
-        <h2 class="section-title">Professional Impact</h2>
-        
-        <div class="exp-box">
-            <div class="exp-header">
-                <h3>Meta Platforms, Inc.</h3>
-                <span class="date">May 2025 – Aug 2025</span>
+        <div class="hero-card">
+          <div class="portrait">
+            <!-- Replace with your best headshot -->
+            <img src="assets/headshot.jpg" alt="Portrait of Rohit Vivek" />
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__kpi">50k+</div>
+              <div class="stat__label">Impressions shipped (Meta)</div>
             </div>
-            <p class="role">Software Engineering Intern </p>
-            <ul>
-                <li>Built post-ad creation upsells for WhatsApp & Messenger across Meta mobile interfaces.</li>
-                <li>Achieved 50,000+ impressions and a 12% click-through rate in initial testing.</li>
-                <li>Deployed performance dashboards for real-time monitoring of engagement metrics.</li>
-            </ul>
-        </div>
-
-        <div class="exp-box">
-            <div class="exp-header">
-                <h3>Kahua, Inc.</h3>
-                <span class="date">May 2024 – Aug 2024</span>
+            <div class="stat">
+              <div class="stat__kpi">12%</div>
+              <div class="stat__label">CTR in early A/B</div>
             </div>
-            <p class="role">AI/ML Engineering Intern </p>
-            <ul>
-                <li>Developed data-secure RAG models using Hierarchical Parsing and LLaVA.</li>
-                <li>Reduced information retrieval times by 40% with 96% accuracy.</li>
-                <li>Engineered multimodal models to mitigate $500k in annual damage costs.</li>
-            </ul>
-        </div>
-    </div>
-</section>
+            <div class="stat">
+              <div class="stat__kpi">96%</div>
+              <div class="stat__label">Avg. RAG accuracy (stress tests)</div>
+            </div>
+          </div>
 
-<section id="projects" class="section dark-bg">
-    <div class="container">
-        <h2 class="section-title">Featured Ventures</h2>
-        <div class="project-grid">
-            
-            <div class="project-card">
-                <div class="img-placeholder">IMAGE SPACE: SCALABLE SOLUTIONS</div>
+          <div class="card-foot">
+            <span class="tag"><i class="fa-solid fa-location-dot"></i> Atlanta / GT</span>
+            <span class="tag"><i class="fa-solid fa-graduation-cap"></i> May 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            I like engineering work where design is traceable, metrics are real, and outcomes ship to users.
+            I’m especially interested in applied ML systems, product engineering, and building tools people actually rely on.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>What I do</h3>
+            <ul class="bullets">
+              <li><strong>Product engineering:</strong> build end-to-end features, measure impact, iterate fast.</li>
+              <li><strong>Applied AI/ML:</strong> RAG pipelines, multimodal models, evaluations + stress testing.</li>
+              <li><strong>Teams + leadership:</strong> co-founder experience; ownership mentality; clear communication.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Toolbox</h3>
+            <div class="chips">
+              <span class="chip">Java</span>
+              <span class="chip">Python</span>
+              <span class="chip">JavaScript / TypeScript</span>
+              <span class="chip">React Native</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Git</span>
+              <span class="chip">PyTorch</span>
+              <span class="chip">LangChain</span>
+              <span class="chip">LlamaIndex</span>
+              <span class="chip">LLaVA</span>
+              <span class="chip">Power BI</span>
+            </div>
+
+            <div class="note">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Skills and experience updated from your newer resume.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Experience</h2>
+          <p>Recent roles focused on shipping product features and building reliable AI systems.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="item">
+            <div class="item__left">
+              <div class="item__role">Software Engineering Intern</div>
+              <div class="item__org">Meta Platforms, Inc.</div>
+              <div class="item__meta">Menlo Park, CA • May 2025 – Aug 2025</div>
+            </div>
+            <div class="item__right">
+              <ul>
+                <li>Built post–ad creation upsells for Click-to products across mobile lightweight interfaces.</li>
+                <li>Designed and shipped a performance dashboard for real-time engagement monitoring.</li>
+                <li>Reached <strong>50,000+ impressions</strong> and <strong>12% CTR</strong> in early A/B testing.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="item__left">
+              <div class="item__role">AI/ML Engineering & R&D Intern</div>
+              <div class="item__org">Kahua, Inc.</div>
+              <div class="item__meta">Alpharetta, GA • May 2024 – Aug 2024</div>
+            </div>
+            <div class="item__right">
+              <ul>
+                <li>Built two API-free, data-secure RAG models (hierarchical parsing + embedding best practices).</li>
+                <li>Engineered a logic-backed multimodal cognition model using LLaVA for construction risk detection.</li>
+                <li>Stress-tested systems: ~96% average response accuracy and ~40% faster retrieval.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="item__left">
+              <div class="item__role">Software Engineering & AI Intern</div>
+              <div class="item__org">Zoftware</div>
+              <div class="item__meta">Dubai, U.A.E • Jun 2023 – Aug 2023</div>
+            </div>
+            <div class="item__right">
+              <ul>
+                <li>Built a Python chatbot using OpenAI API; improved persistence with databases + tooling.</li>
+                <li>Integrated MongoDB (PyMongo) and improved context persistence via vector DB workflows.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="item">
+            <div class="item__left">
+              <div class="item__role">Software Engineer Intern</div>
+              <div class="item__org">JPMorgan Chase</div>
+              <div class="item__meta">Dubai, U.A.E • Jan 2021 – Mar 2021</div>
+            </div>
+            <div class="item__right">
+              <ul>
+                <li>Built a stock price visualizer using JPMorgan Perspective + Alpha Vantage data.</li>
+                <li>Worked with Git workflows and data-driven reporting.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-foot">
+          <div class="mini-card">
+            <div class="mini-card__title">Education</div>
+            <div class="mini-card__body">
+              <strong>Georgia Institute of Technology</strong> — B.S. Computer Science, Minor in Economics (Expected May 2026)<br/>
+              GPA: 3.86 • Concentrations: AI + People • Faculty Honors
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>Selected work — product builds, applied ML, and real-world systems.</p>
+        </div>
+
+        <div class="cards">
+          <!-- Scalable Solutions -->
+          <article class="proj">
+            <div class="proj__top">
+              <div class="proj__icon"><i class="fa-solid fa-kit-medical"></i></div>
+              <div>
                 <h3>Scalable Solutions</h3>
-                <p>Co-Founder & Software Lead. Developing medical dosage calculators and patient weighing systems for emergency response.</p>
-                <div class="card-links">
-                    <a href="https://scalablesolutions.website" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-                </div>
+                <p class="proj__subtitle">Co-founder & Software Lead • Med-tech</p>
+              </div>
             </div>
+            <p class="proj__desc">
+              We build <strong>stretcher-mounted patient weighing systems</strong> and accompanying
+              <strong>medical dose calculators</strong> to support accurate dosing in emergencies.
+            </p>
+            <div class="proj__links">
+              <!-- TODO: replace with your real URL -->
+              <a class="link" href="https://YOUR-COMPANY-SITE.com" target="_blank" rel="noreferrer">
+                Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div class="proj__tags">
+              <span class="tag">Healthcare</span><span class="tag">Embedded</span><span class="tag">Product</span>
+            </div>
+          </article>
 
-            <div class="project-card">
-                <div class="img-placeholder">IMAGE SPACE: OUTPOST</div>
+          <!-- OutPost -->
+          <article class="proj">
+            <div class="proj__top">
+              <div class="proj__icon"><i class="fa-solid fa-compass"></i></div>
+              <div>
                 <h3>OutPost</h3>
-                <p>Camera-enabled local LLM assistant for outdoor exploration. Lead for object detection and camera operations.</p>
-                <div class="card-links">
-                    <a href="#" target="_blank">GitHub <i class="fab fa-github"></i></a>
-                </div>
+                <p class="proj__subtitle">Camera-enabled local LLM assistant • Outdoor exploration</p>
+              </div>
             </div>
-
-            <div class="project-card">
-                <div class="img-placeholder">IMAGE SPACE: SMS SPAM</div>
-                <h3>SMS Spam Classifier</h3>
-                <p>ML pipeline (TF-IDF + Naive Bayes) achieving 97% precision for binary classification.</p>
-                <div class="card-links">
-                    <a href="#" target="_blank">Repository <i class="fab fa-github"></i></a>
-                </div>
+            <p class="proj__desc">
+              Team-built virtual assistant running a <strong>local LLM</strong> with a camera for real-time exploration.
+              I focused on <strong>camera ops</strong> — object detection, vision pipeline integration, and robustness.
+            </p>
+            <div class="proj__links">
+              <!-- TODO: replace with your real repo -->
+              <a class="link" href="https://github.com/YOUR-USERNAME/OUTPOST" target="_blank" rel="noreferrer">
+                GitHub Repo <i class="fa-brands fa-github"></i>
+              </a>
             </div>
+            <div class="proj__tags">
+              <span class="tag">Computer Vision</span><span class="tag">Edge AI</span><span class="tag">LLMs</span>
+            </div>
+          </article>
 
-        </div>
-    </div>
-</section>
+          <!-- SMS Spam ML -->
+          <article class="proj">
+            <div class="proj__top">
+              <div class="proj__icon"><i class="fa-solid fa-filter-circle-dollar"></i></div>
+              <div>
+                <h3>SMS Spam Detection</h3>
+                <p class="proj__subtitle">Machine Learning • Text classification</p>
+              </div>
+            </div>
+            <p class="proj__desc">
+              Binary classification (spam vs. ham) on the <strong>UCI SMS Spam Collection</strong> (~5.5k messages).
+              Pipeline: cleaning + normalization, <strong>TF-IDF (uni/bi-grams)</strong>, baselines like
+              <strong>Logistic Regression</strong> and <strong>Multinomial Naive Bayes</strong>, aiming for high recall/precision
+              (≈97%/98%) while tracking compute.
+            </p>
+            <div class="proj__links">
+              <!-- TODO: replace with your real links -->
+              <a class="link" href="https://YOUR-PROJECT-SITE.com" target="_blank" rel="noreferrer">
+                Project Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a class="link" href="https://github.com/YOUR-ORG/YOUR-REPO" target="_blank" rel="noreferrer">
+                Repo <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="proj__tags">
+              <span class="tag">NLP</span><span class="tag">TF-IDF</span><span class="tag">Evaluation</span>
+            </div>
+          </article>
 
-<footer id="contact" class="footer">
-    <div class="container">
-        <h2>Let's Connect</h2>
-        <div class="contact-grid">
-            <a href="mailto:rvivek7@gatech.edu"><i class="fas fa-envelope"></i> rvivek7@gatech.edu [cite: 2]</a>
-            <a href="tel:4708832697"><i class="fas fa-phone"></i> (470)-883-2697 [cite: 2]</a>
-            <a href="https://www.linkedin.com/in/rohitvivek/"><i class="fab fa-linkedin"></i> LinkedIn [cite: 2]</a>
+          <!-- Weather App -->
+          <article class="proj">
+            <div class="proj__top">
+              <div class="proj__icon"><i class="fa-solid fa-cloud-sun"></i></div>
+              <div>
+                <h3>Weather App</h3>
+                <p class="proj__subtitle">React Native • Real-time data</p>
+              </div>
+            </div>
+            <p class="proj__desc">
+              Built a weather app in React Native (TypeScript/JavaScript) with OpenWeatherMap API integration,
+              clean UI, and responsive mobile layouts.
+            </p>
+            <div class="proj__links">
+              <!-- Optional -->
+              <span class="hint">Add a repo link if you want.</span>
+            </div>
+            <div class="proj__tags">
+              <span class="tag">React Native</span><span class="tag">Mobile</span><span class="tag">APIs</span>
+            </div>
+          </article>
         </div>
-        <div class="academic-footer">
-            <p>B.S. Computer Science | Georgia Institute of Technology | GPA: 3.86 </p>
-        </div>
-    </div>
-</footer>
+      </div>
+    </section>
 
+    <!-- HIGHLIGHTS -->
+    <section id="writing" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Highlights</h2>
+          <p>Quick signal for what you’re about (and a place for flexes).</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3><i class="fa-solid fa-rocket"></i> Impact</h3>
+            <p>Shipped mobile growth features, measured performance, and iterated with real A/B feedback loops.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-brain"></i> Applied AI</h3>
+            <p>Built data-secure RAG systems + multimodal risk models with testing and reliability focus.</p>
+          </div>
+          <div class="card">
+            <h3><i class="fa-solid fa-people-group"></i> Leadership</h3>
+            <p>Co-founded teams and built products end-to-end with ownership across software + UX + delivery.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>If you’re hiring, collaborating, or building something meaningful — I’m in.</p>
+        </div>
+
+        <div class="contact">
+          <div class="card">
+            <h3>Reach me directly</h3>
+            <div class="contact-links">
+              <a class="meta-link" href="mailto:rvivek7@gatech.edu"><i class="fa-solid fa-envelope"></i> rvivek7@gatech.edu</a>
+              <a class="meta-link" href="tel:+14708832697"><i class="fa-solid fa-phone"></i> +1 (470) 883-2697</a>
+              <a class="meta-link" href="https://www.linkedin.com/in/rohitvivek/" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+              </a>
+              <!-- Optional socials -->
+              <a class="meta-link" href="https://www.instagram.com/rohit_viv/" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-instagram"></i> Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Send a message</h3>
+
+            <!-- Keep your Google Sheets form if you want -->
+            <form id="contactForm" name="submit-to-google-sheet">
+              <label class="sr-only" for="name">Name</label>
+              <input id="name" type="text" name="Name" placeholder="Your name" required />
+
+              <label class="sr-only" for="email">Email</label>
+              <input id="email" type="email" name="E-mail" placeholder="you@example.com" required />
+
+              <label class="sr-only" for="message">Message</label>
+              <textarea id="message" name="Message" rows="6" placeholder="What are you building?" required></textarea>
+
+              <button class="btn btn-primary" type="submit">
+                Send <i class="fa-solid fa-paper-plane"></i>
+              </button>
+
+              <div id="msg" class="form-msg" aria-live="polite"></div>
+            </form>
+
+            <p class="hint">
+              Prefer email? <a class="link" href="mailto:rvivek7@gatech.edu">Click here.</a>
+            </p>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div>© <span id="year"></span> Rohit Vivek</div>
+          <div class="footer__right">
+            <a class="link" href="#top">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+
+  <!-- Google Sheets submit (your existing endpoint) -->
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGOFemBrLVkPGGyBq1icTCpD2dP4scqk52nUQNo-EKXtlaLadA7eVIRZVqw13uJO6Q/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    if (form) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        msg.textContent = "Sending…";
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(() => {
+            msg.textContent = "Thank you — message received.";
+            setTimeout(() => (msg.textContent = ""), 5000);
+            form.reset();
+          })
+          .catch(() => {
+            msg.textContent = "Something went wrong. Please email me directly.";
+          });
+      });
+    }
+  </script>
 </body>
 </html>
