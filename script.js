@@ -8,7 +8,7 @@ if (toggle && nav) {
     toggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  // Close on link click (mobile)
+  // Close nav after clicking a link (mobile)
   nav.querySelectorAll("a").forEach(a => {
     a.addEventListener("click", () => {
       nav.classList.remove("open");
