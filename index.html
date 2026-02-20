@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Rohit Vivek — Software Engineer & Builder</title>
-  <meta name="description" content="Rohit Vivek — Creator, Learner, Thinker." />
+  <meta name="description" content="Rohit Vivek — Software Engineer • AI/ML • Product Development." />
 
   <!-- Open Graph (optional images) -->
   <meta property="og:title" content="Rohit Vivek — Software Engineer & Builder" />
@@ -66,6 +66,7 @@
       <nav id="site-nav" class="nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#highlights">Highlights</a>
         <a href="#contact" class="nav__cta">Contact</a>
@@ -88,7 +89,7 @@
           </h1>
 
           <p class="lead">
-            CS @ Georgia Tech. Incoming SWE @ Meta. Building Scalable Solutions.
+            CS @ Georgia Tech. Incoming SWE @ Meta. Co-founder building Scalable Solutions.
           </p>
 
           <div class="hero-actions">
@@ -119,15 +120,15 @@
           <div class="stats">
             <div class="stat">
               <div class="stat__kpi">50k+</div>
-              <div class="stat__label">Impressions shipped (at Meta)</div>
+              <div class="stat__label">Impressions shipped (Meta)</div>
             </div>
             <div class="stat">
               <div class="stat__kpi">12%</div>
-              <div class="stat__label">CTR in early A/B (at Meta)</div>
+              <div class="stat__label">CTR in early A/B (Meta)</div>
             </div>
             <div class="stat">
               <div class="stat__kpi">96%</div>
-              <div class="stat__label">Avg. RAG accuracy (stress tests) (at Kahua)</div>
+              <div class="stat__label">Avg. RAG accuracy (Kahua tests)</div>
             </div>
           </div>
 
@@ -145,8 +146,11 @@
         <div class="section-head">
           <h2>About</h2>
           <p>
-            I like engineering work where design is traceable, metrics are real, and outcomes ship to users.
-            I’m especially interested in applied ML systems, product engineering, and building tools people rely on.
+            I’m Rohit Vivek, a Computer Science student at Georgia Tech focused on building practical, high-quality software.
+            My interests sit at the intersection of product engineering and applied AI—especially systems that ship and deliver measurable impact.
+            I’ve worked on mobile growth features at Meta and built secure RAG and multimodal prototypes in industry settings.
+            Outside of internships, I’m a co-founder building Scalable Solutions, a stretcher-mounted weighing and medical dose calculator system for emergency care.
+            I’m always looking for ambitious teams building real products.
           </p>
         </div>
 
@@ -176,7 +180,10 @@
               <span class="chip">Power BI</span>
             </div>
 
-            
+            <div class="note">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Current site built with HTML/CSS/JS for GitHub Pages (no build tools).</span>
+            </div>
           </div>
         </div>
       </div>
@@ -272,12 +279,40 @@
       </div>
     </section>
 
+    <!-- RESUME -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Resume</h2>
+          <p>Open or download my résumé as a PDF.</p>
+        </div>
+
+        <div class="card">
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="assets/Rohit_Vivek_Resume.pdf" target="_blank" rel="noreferrer">
+              Open PDF <i class="fa-regular fa-file-lines"></i>
+            </a>
+            <a class="btn btn-ghost" href="assets/Rohit_Vivek_Resume.pdf" download>
+              Download <i class="fa-solid fa-download"></i>
+            </a>
+          </div>
+
+          <div class="resume-embed">
+            <iframe
+              title="Rohit Vivek Resume"
+              src="assets/Rohit_Vivek_Resume.pdf">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Projects</h2>
-          <p>Selected work — product builds, applied ML, and real-world systems.</p>
+          <p>Selected work — each with linked documents (repo/site) for review.</p>
         </div>
 
         <div class="cards">
@@ -293,14 +328,15 @@
             </div>
 
             <div class="proj__thumb">
-              <img src="projects/scalable.png" alt="Scalable Solutions preview" loading="lazy">
+              <img src="projects/scalable.png?v=2" alt="Scalable Solutions preview" loading="lazy">
             </div>
 
             <p class="proj__desc">
-              We build <strong>stretcher-mounted patient weighing systems</strong> and accompanying
-              <strong>medical dose calculators</strong> to support accurate dosing in emergencies.
+              We build stretcher-mounted patient weighing systems and accompanying medical dose calculators to support accurate dosing in emergencies.
+              <span class="mini">Skills: product engineering + embedded/software integration → outcome: safer, faster dosing workflow.</span>
             </p>
 
+            <div class="doc-label">Documents</div>
             <div class="proj__links">
               <a class="link" href="https://scalablesolutions.me" target="_blank" rel="noreferrer">
                 Website <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -323,17 +359,18 @@
             </div>
 
             <div class="proj__thumb">
-              <img src="projects/outpost.png" alt="OutPost preview" loading="lazy">
+              <img src="projects/outpost.png?v=2" alt="OutPost preview" loading="lazy">
             </div>
 
             <p class="proj__desc">
-              Team-built virtual assistant running a <strong>local LLM</strong> with a camera for real-time exploration.
-              I owned <strong>camera ops</strong> — object detection, vision pipeline integration, and robustness.
+              Team-built virtual assistant running a local LLM with a camera for real-time exploration. I owned camera ops: object detection and vision pipeline integration.
+              <span class="mini">Skills: computer vision + on-device pipelines → outcome: reliable visual grounding for the assistant.</span>
             </p>
 
+            <div class="doc-label">Documents</div>
             <div class="proj__links">
               <a class="link" href="https://github.com/rovivek/OutpostCamOps" target="_blank" rel="noreferrer">
-                GitHub Repo <i class="fa-brands fa-github"></i>
+                Repo <i class="fa-brands fa-github"></i>
               </a>
             </div>
 
@@ -353,15 +390,15 @@
             </div>
 
             <div class="proj__thumb">
-              <img src="projects/spam.png" alt="SMS spam detection preview" loading="lazy">
+              <img src="projects/spam.png?v=2" alt="SMS spam detection preview" loading="lazy">
             </div>
 
             <p class="proj__desc">
-              Binary classification (spam vs. ham) on the <strong>UCI SMS Spam Collection</strong> (~5.5k messages).
-              Pipeline: cleaning, <strong>TF-IDF (uni/bi-grams)</strong>, baselines like <strong>LogReg</strong> + <strong>Multinomial NB</strong>.
-              Targeting strong recall/precision (≈97%/98%) while monitoring compute.
+              Binary classification (spam vs. ham) on the UCI SMS Spam Collection (~5.5k messages) using cleaning + TF-IDF (uni/bi-grams) with strong baselines (LogReg, Multinomial NB).
+              <span class="mini">Skills: NLP preprocessing + model evaluation → outcome: high-precision spam filtering pipeline.</span>
             </p>
 
+            <div class="doc-label">Documents</div>
             <div class="proj__links">
               <a class="link" href="https://github.gatech.edu/pages/tdantu3/sms-spam-detection-ml/" target="_blank" rel="noreferrer">
                 Project Site <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -387,13 +424,18 @@
             </div>
 
             <div class="proj__thumb">
-              <img src="projects/weather.png" alt="Weather app preview" loading="lazy">
+              <img src="projects/weather.png?v=2" alt="Weather app preview" loading="lazy">
             </div>
 
             <p class="proj__desc">
-              Built a weather app in React Native (TypeScript/JavaScript) with API integration, clean UI,
-              and responsive mobile layouts.
+              Built a weather app in React Native with API integration, clean UI, and responsive mobile layouts.
+              <span class="mini">Skills: mobile UI + API integration → outcome: real-time forecasts in a polished app.</span>
             </p>
+
+            <div class="doc-label">Documents</div>
+            <div class="proj__links">
+              <span class="hint">Add a repo link if you want.</span>
+            </div>
 
             <div class="proj__tags">
               <span class="tag">React Native</span><span class="tag">Mobile</span><span class="tag">APIs</span>
@@ -414,15 +456,15 @@
         <div class="grid-3">
           <div class="card">
             <h3><i class="fa-solid fa-rocket"></i> Impact</h3>
-            <p>Shipped features with measurement and iteration loops; moved engagement metrics in production.</p>
+            <p>Shipped measurable features and dashboards; iterated using real A/B feedback loops.</p>
           </div>
           <div class="card">
             <h3><i class="fa-solid fa-brain"></i> Applied AI</h3>
-            <p>Built secure RAG systems + multimodal models with evaluation and reliability focus.</p>
+            <p>Built secure RAG + multimodal prototypes with evaluation, stress testing, and performance focus.</p>
           </div>
           <div class="card">
             <h3><i class="fa-solid fa-people-group"></i> Leadership</h3>
-            <p>Co-founded and shipped products end-to-end with ownership across engineering and delivery.</p>
+            <p>Co-founder experience with ownership across design, implementation, and delivery.</p>
           </div>
         </div>
       </div>
