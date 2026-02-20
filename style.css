@@ -178,6 +178,14 @@ img{ max-width: 100%; display: block; }
   align-items: stretch;
 }
 
+.hero-bio{
+  margin-top: 14px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.7;
+  max-width: 70ch;
+  font-weight: 600;
+}
+
 .pill{
   display:inline-flex;
   gap: 10px;
